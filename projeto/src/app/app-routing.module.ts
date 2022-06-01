@@ -19,6 +19,30 @@ const routes: Routes = [
     path: 'card',
     loadChildren: () => import('./pages/card/card.module').then( m => m.CardPageModule)
   },
+  {
+    path: 'usuario',
+    loadChildren: () => import('./usuario/usuario.module').then( m => m.UsuarioPageModule)
+  },
+  {
+    path: 'servico',
+    loadChildren: () => import('./servico/servico.module').then( m => m.ServicoPageModule)
+  },
+  {
+    path: 'suporte',
+    loadChildren: () => import('./suporte/suporte.module').then( m => m.SuportePageModule)
+  },
+  {
+    path: 'configuracao',
+    loadChildren: () => import('./configuracao/configuracao.module').then( m => m.ConfiguracaoPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'sair',
+    loadChildren: () => import('./sair/sair.module').then( m => m.SairPageModule)
+  },
 ];
 
 @NgModule({

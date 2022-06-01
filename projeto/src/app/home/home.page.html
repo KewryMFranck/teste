@@ -1,6 +1,7 @@
 <ion-header>
   <ion-toolbar color="warning" >
     <ion-buttons slot="start">
+      <!-- <ion-icon name="menu"></ion-icon> -->
     <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>Happy Pets</ion-title>
@@ -9,40 +10,49 @@
 
 <ion-content [fullscreen]="true">
 <ion-list>
-  <ion-label>Maria Das Graças</ion-label>
+  <ion-label>Josefina das Graças</ion-label>
 </ion-list>
 
-<ion-content>
   <ion-card>
     <ion-img src="../assets/img.png"></ion-img>
   </ion-card>
-</ion-content>
+
 
   <div id="container">
-    <strong>Conscious Adoption!
-    </strong>
-    <p>Only adopt you are going to give love and all the necessary care.
+    <strong>
+      cão femea 2anos
+
+    </strong>  
+      <br> 
+
+      Adoção Consciente!
+
+
+    <p>Só adote você vai dar amor e todos os cuidados necessários.
   </div>
-</ion-content>
 
 
-<ion-content><ion-fab vertical="center" horizontal="center" slot="fixed">
-  <ion-fab-button>
-    <ion-icon name="add"></ion-icon>
-  </ion-fab-button>
-</ion-fab>
 
-  <ion-content>
-    <ion-fab vertical="right " horizontal="end" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="search"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
 
-    <ion-content>
-      <ion-fab vertical="left side" horizontal="left" slot="fixed">
-      <ion-fab-button>
-        <ion-icon name="home"></ion-icon>
-      </ion-fab-button>
-</ion-fab>
+
+
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+  
+   <ion-tab-button tab="home">
+     <ion-icon name="home"></ion-icon>
+   </ion-tab-button>
+  
+   <ion-tab-button tab="add-circle">
+     <ion-icon name="add-circle"></ion-icon>
+  
+   </ion-tab-button>
+  
+   <ion-tab-button tab="search-circle">
+     <ion-icon name="search-circle"></ion-icon>
+   </ion-tab-button>
+ </ion-tab-bar>
+</ion-tabs>
+  
 </ion-content>
