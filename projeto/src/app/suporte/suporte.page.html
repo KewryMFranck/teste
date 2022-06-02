@@ -1,15 +1,42 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
     <ion-title>Suporte</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
+    <ion-fab-button (click)="showAdd()" color="Warning">
+    <ion-icon name="alert-circle-outline"></ion-icon>
+</ion-fab-button>
     <ion-label>Relatar problema</ion-label>
   </ion-list>
 <p></p>
   <ion-list>
+    <ion-icon name="help-circle-outline"></ion-icon>
     <ion-label>Central de ajuda</ion-label>
   </ion-list>
+  
+  
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+     <ion-tab-button tab="home">
+       <ion-icon name="home"     [routerLink]="['/casa']">    
+       </ion-icon>
+     </ion-tab-button>
+    
+     <ion-tab-button tab="add-circle">
+       <ion-icon name="add-circle"   [routerLink]="['/publicacoes']">
+       </ion-icon>
+     </ion-tab-button>
+    
+     <ion-tab-button tab="search-circle">
+       <ion-icon name="search-circle"   [routerLink]="['/busca']"></ion-icon>
+     </ion-tab-button>
+   </ion-tab-bar>
+  </ion-tabs>
+  
 </ion-content>

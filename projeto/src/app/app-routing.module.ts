@@ -43,6 +43,31 @@ const routes: Routes = [
     path: 'sair',
     loadChildren: () => import('./sair/sair.module').then( m => m.SairPageModule)
   },
+  {
+    path: 'publicacoes',
+    loadChildren: () => import('./publicacoes/publicacoes.module').then( m => m.PublicacoesPageModule)
+  },
+  {
+    path: 'informacao',
+    loadChildren: () => import('./informacao/informacao.module').then( m => m.InformacaoPageModule)
+  },
+  {
+    path: 'tab1',
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./publicacoes/publicacoes.module').then((m) => m.PublicacoesPageModule),
+      },
+    ],
+  },
+  {
+    path: 'busca',
+    loadChildren: () => import('./busca/busca.module').then( m => m.BuscaPageModule)
+  },
+  {
+    path: 'casa',
+    loadChildren: () => import('./casa/casa.module').then( m => m.CasaPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,15 +1,28 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>usuario</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Happy Pets</ion-title>
   </ion-toolbar>
 </ion-header>
 
+
+</ion-nav-bar>
+
 <ion-content>
   <ion-list>
-    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+    <ion-fab-button (click)="showAdd()" color="secondary">
+    <ion-icon name="person"></ion-icon>
+  </ion-fab-button>
+    <ion-label>Usuário</ion-label>
+  </ion-list>
+
+  <ion-list>
+    <ion-icon name="logo-wechat"></ion-icon>
     <ion-label>Chat</ion-label>
   </ion-list>
-<p></p>
+  <p></p>
   <ion-list>
     <ion-icon name="chatbox-ellipses-outline"></ion-icon>
     <ion-label>Usuario</ion-label>
@@ -19,6 +32,25 @@
     <ion-icon name="chatbox-ellipses-outline"></ion-icon>
     <ion-label>ONG's</ion-label>
   </ion-list>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+     <ion-tab-button tab="home">
+       <ion-icon name="home"     [routerLink]="['/casa']">    
+       </ion-icon>
+     </ion-tab-button>
+    
+     <ion-tab-button tab="add-circle">
+       <ion-icon name="add-circle"   [routerLink]="['/publicacoes']">
+       </ion-icon>
+     </ion-tab-button>
+    
+     <ion-tab-button tab="search-circle">
+       <ion-icon name="search-circle"   [routerLink]="['/busca']"></ion-icon>
+     </ion-tab-button>
+   </ion-tab-bar>
+  </ion-tabs>
+
 </ion-content>
 
 

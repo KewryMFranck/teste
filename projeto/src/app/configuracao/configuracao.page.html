@@ -1,20 +1,50 @@
+
+
 <ion-header>
   <ion-toolbar>
-    <ion-title>Configuracao</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Configuração</ion-title>
   </ion-toolbar>
 </ion-header>
 
+
+
+
 <ion-content>
   <ion-list>
+    <ion-icon name="server-outline"></ion-icon>
     <ion-label>Dados cadastrais</ion-label>
   </ion-list>
   <p></p>
   <ion-list>
+    <ion-icon name="person-outline"></ion-icon>
     <ion-label>Login senha</ion-label>
   </ion-list>
 <p></p>
   <ion-list>
+    <ion-icon name="chatbox-outline"></ion-icon>
     <ion-label>Enviar feedback</ion-label>
   </ion-list>
+
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+     <ion-tab-button tab="home">
+       <ion-icon name="home"     [routerLink]="['/casa']">    
+       </ion-icon>
+     </ion-tab-button>
+    
+     <ion-tab-button tab="add-circle">
+       <ion-icon name="add-circle"   [routerLink]="['/publicacoes']">
+       </ion-icon>
+     </ion-tab-button>
+    
+     <ion-tab-button tab="search-circle">
+       <ion-icon name="search-circle"   [routerLink]="['/busca']"></ion-icon>
+     </ion-tab-button>
+   </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
 
