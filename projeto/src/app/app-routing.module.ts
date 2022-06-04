@@ -55,7 +55,7 @@ const routes: Routes = [
     path: 'tab1',
     children: [
       {
-        path: '',
+        path: 'publicacoes',
         loadChildren: () => import('./publicacoes/publicacoes.module').then((m) => m.PublicacoesPageModule),
       },
     ],

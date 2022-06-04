@@ -6,7 +6,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { PublicacoesPageRoutingModule } from './publicacoes-routing.module';
 
-import { PublicacoesPage } from './publicacoes.page';
+import {  PublicacoesPage} from './publicacoes.page';
 
 @NgModule({
   imports: [
