@@ -68,6 +68,10 @@ const routes: Routes = [
     path: 'casa',
     loadChildren: () => import('./casa/casa.module').then( m => m.CasaPageModule)
   },
+  {
+    path: 'register',
+    loadChildren: () => import('./auth/register/register.module').then( m => m.RegisterPageModule)
+  },
 ];
 
 @NgModule({
